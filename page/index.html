@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover universities abroad, compare tuition fees and find scholarships with My Uni Finder.">
+    <title>My Uni Finder | Find Your University Abroad</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#home" class="logo" aria-label="My Uni Finder homepage">
+                <img src="logo.svg" alt="My Uni Finder logo">
+            </a>
+
+            <nav class="main-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#universities">Universities</a></li>
+                    <li><a href="#cost-comparison">Compare Costs</a></li>
+                    <li><a href="#scholarship-finder">Scholarships</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!--MAIN CONTENT-->
+    <main>
+
+        <!--1 SECTION-->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <p class="eyebrow">YOUR FUTURE HAS NO BORDERS</p>
+
+                <h1>
+                    Find your place
+                    <span>in the world.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover universities abroad, explore study opportunities
+                    and find the right path for your future, all in one place.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#universities" class="button button-primary">
+                        Explore Universities
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--SERIVES-->
+        <section class="features section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">A SMARTER WAY TO PLAN</p>
+                    <h2>Everything you need to study abroad</h2>
+                    <p>
+                        From finding the right university to planning your
+                        budget, make informed decisions about your future.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <span class="feature-number">01</span>
+                        <h3>Discover Universities</h3>
+                        <p>
+                            Explore universities across different countries
+                            and find programmes that match your interests.
+                        </p>
+                        <a href="#universities" class="text-link">
+                            Explore universities &rarr;
+                        </a>
+                    </article>
+
+                    <article class="feature-card" id="compare">
+                        <span class="feature-number">02</span>
+                        <h3>Compare Study Costs</h3>
+                        <p>
+                            Compare tuition fees, locations and languages
+                            of instruction to find an option that fits your budget.
+                        </p>
+                        <a href="#cost-comparison" class="text-link">
+                            Compare your options &rarr;
+                        </a>
+                    </article>
+
+                    <article class="feature-card" id="scholarships">
+                        <span class="feature-number">03</span>
+                        <h3>Find Scholarships</h3>
+                        <p>
+                            Discover funding opportunities, review eligibility
+                            requirements and explore application deadlines.
+                        </p>
+                        <a href="#scholarship-finder" class="text-link">
+                            Explore scholarships &rarr;
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--UNIVERSITY SEARCH-->
+        <section class="university-search section" id="universities">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE YOUR OPTIONS</p>
+                    <h2>Find your university</h2>
+                    <p>
+                        Search for study opportunities by country and subject.
+                        Discover a place where you can grow.
+                    </p>
+                </div>
+
+                <form class="search-form" action="#university-results" method="get">
+
+                    <div class="form-group">
+                        <label for="country">Destination</label>
+                        <select id="country" name="country">
+                            <option value="">Choose a country</option>
+                            <option value="poland">Poland</option>
+                            <option value="germany">Germany</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                            <option value="spain">Spain</option>
+                            <option value="austria">Austria</option>
+                            <option value="finland">Finland</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="ireland">Ireland</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="czechia">Czechia</option>
+                            <option value="norway">Norway</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="greece">Greece</option>
+                            <option value="japan">Japan</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Field of study</label>
+                        <select id="subject" name="subject">
+                            <option value="">Choose a subject</option>
+                            <option value="business">Business and Economics</option>
+                            <option value="computer-science">Computer Science and IT</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="social-sciences">Social Sciences</option>
+                            <option value="arts">Arts and Design</option>
+                            <option value="law">Law</option>
+                            <option value="medicine">Medicine and Health</option>
+                            <option value="natural-sciences">Natural Sciences</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="study-language">Language of instruction</label>
+                        <select id="study-language" name="language">
+                            <option value="">Any language</option>
+                            <option value="english">English</option>
+                            <option value="local">Local language</option>
+                        </select>
+                    </div>
+
+                    <div class="search-buttons">
+
+                        <button type="submit" class="button button-primary">
+                            Search Universities
+                        </button>
+
+                        <button type="button" id="reset-search" class="reset-search-button">
+                            Back
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div class="search-results" id="university-results">
+                    <h3>University results</h3>
+                    <p id="results-message">
+                        Choose a country and click Search Universities.
+                    </p>
+                    <div id="university-list"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--COST COMPARISON-->
+        <section class="cost-comparison section" id="cost-comparison">
+            <div class="container comparison-content">
+
+                <div class="comparison-text">
+                    <p class="eyebrow">PLAN YOUR BUDGET</p>
+                    <h2>Your education. Your budget. Your choice.</h2>
+                    <p>
+                        Studying abroad is an investment in your future.
+                        Compare tuition fees and study options before
+                        deciding where to apply.
+                    </p>
+
+                    <ul class="benefit-list">
+                        <li>Compare universities side by side</li>
+                        <li>Check tuition fees and currencies</li>
+                        <li>Explore different study destinations</li>
+                    </ul>
+
+                    <button type="button" id="start-comparing" class="button button-secondary">
+                        Start Comparing
+                    </button>
+                </div>
+
+                <div class="comparison-placeholder" id="comparison-placeholder">
+                    <h3>Make an informed decision</h3>
+                    <p>Your future university comparison will appear here.</p>
+                    <p>
+                        Select universities to compare their tuition fees,
+                        locations and study languages.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--SCHOLARSHIP-->
+        <section class="scholarship-finder section" id="scholarship-finder">
+            <div class="container scholarship-content">
+
+                <div class="section-heading">
+                    <p class="eyebrow">MAKE YOUR DREAM AFFORDABLE</p>
+                    <h2>Find funding for your future</h2>
+                    <p>
+                        Explore scholarships and financial support that
+                        can help you take the next step in your education.
+                    </p>
+                </div>
+
+                <button type="button" id="explore-scholarships" class="button button-primary scholarship-button">
+                    Explore Scholarships
+                </button>
+
+                <div id="scholarship-list" hidden></div>
+
+            </div>
+        </section>
+
+
+        <!--LAST SECTION-->
+        <section class="final-cta section">
+            <div class="container">
+                <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+                <h2>There is a university out there for you.</h2>
+                <p>
+                    Start exploring your options and take the first step
+                    towards your international education.
+                </p>
+                <a href="#universities" class="button button-primary">
+                    Find Your Future
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--FOOTER-->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">My Uni Finder</a>
+                <p>
+                    Helping students discover opportunities
+                    and make informed decisions about studying abroad.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#universities">Universities</a></li>
+                    <li><a href="#cost-comparison">Compare Costs</a></li>
+                    <li><a href="#scholarship-finder">Scholarships</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have a question or suggestion?</p>
+                <a href="mailto:hello@myunifinder.example">
+                    Contact My Uni Finder
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 My Uni Finder. All rights reserved.</p>
+            <a href="#home">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+
+    <!--COOKIES-->
+    <div class="cookie-banner" id="cookie-banner">
+        <div class="cookie-content">
+            <div>
+                <h3>We value your privacy</h3>
+                <p>
+                    We use cookies to improve your browsing experience
+                    and analyse website traffic.
+                </p>
+            </div>
+
+            <div class="cookie-buttons">
+                <button class="cookie-accept" id="accept-cookies" type="button">
+                    Accept all
+                </button>
+
+                <button class="cookie-reject" id="reject-cookies" type="button">
+                    Reject all
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JAVASCRIPT-->
+    <script src="universities.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
